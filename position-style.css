@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body{
+	 background-image: radial-gradient(ellipse farthest-corner at 50% 50% , #FFFF80 20%, rgba(204, 153, 153, 0.4) 30%, #E6E6FF 60%);
+	 background-attachment: fixed;
+}
+
+body *, body *::before, body *::after{
+	box-sizing : border-box;
+}
+
+ul{
+	position:absolute;
+	top:50%;
+	width: 500px;
+	margin-top:-15px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+}
+li{
+	position:relative;
+	float:left;
+}
+
+span{
+	position:absolute;
+	top:0;
+	left:10px;
+}
+.fa {
+	font-size: 10px;
+}
+
+button{
+	display:block;
+	width:100px;
+	height: 30px;
+	border-right: 1px solid black;
+
+}
+li:last-child button{
+	 border-radius: 0px 40px 40px 0px;
+}
+li:first-child button{
+	border-radius: 40px 0px 0px 40px;
+}
+
+button:focus {
+  outline: none;
+}
